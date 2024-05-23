@@ -1,7 +1,7 @@
 # woocogs
 Discogs to WooCommerce Import
 
-This is a simple script that allows you to connect Discogs and your WooCommerce vinyl store. You can enter catalog ids manually or upload a CSV file (simple file with catalog ids separated by commas). I run this on my local machine.
+This is a simple script that allows you to connect Discogs and your WooCommerce vinyl store. You can enter catalog ids manually or upload a CSV file (simple file with catalog ids separated by commas). I run this on my local machine.  Requires Python & Flask
 
 You'll need to update the woocogs.py file and the discogs_token.json file with your Discogs and WooCommerce api information.  
 
@@ -42,7 +42,7 @@ In WooCommerce a new product is created. The product is pre-populated with:<br>
   - Stock Quantity: defaults to 1
   - In Stock: True (marks the product as in stock)<br><br>
 
-For the front end I'm using Flask. The html template is part of the woocogs.py file. From there you can update the logo, page heading, text, add additional countries to the drop down search, change colors, etcs...<br><br>
+For the front end I'm using Flask and a simple bootsrap dark theme. The html template is part of the woocogs.py file. From there you can update the logo, page heading, text, add additional countries to the drop down search, change colors, etcs...<br><br>
 
 There isn't a working 'Success Message' - Once I upload a CSV I check WooCommerce to verify. I did attempt to add a success message but never went back to debug.
 

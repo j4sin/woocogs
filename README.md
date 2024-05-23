@@ -48,7 +48,7 @@ In WooCommerce a new product is created. The product is pre-populated with:<br>
 
 For the front end I'm using Flask and a simple bootstrap dark theme. The html template is part of the woocogs.py file. From there you can update the logo, page heading, text, add additional countries to the drop down search, change colors, etcs...<br><br>
 
-There isn't a working 'Success Message' - Once I upload a CSV I check WooCommerce to verify. I did attempt to add a success message but never went back to debug.
+There isn't a working 'Success Message' on the web interface. There is a success message generated in the command terminal. I did attempt to add a success message but never went back to debug.
 
 I hope this is helpful. It is worth noting that I am NOT a programmer and this is my first submission to Github. I'll try to answer and help as I can, I wrote this a few yrs back but it's still working great (as of May 2024).
 

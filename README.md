@@ -42,7 +42,7 @@ In WooCommerce a new product is created. The product is pre-populated with:<br>
   - Stock Quantity: defaults to 1
   - In Stock: True (marks the product as in stock)<br><br>
 
-For the front end I'm using Flask and a simple bootsrap dark theme. The html template is part of the woocogs.py file. From there you can update the logo, page heading, text, add additional countries to the drop down search, change colors, etcs...<br><br>
+For the front end I'm using Flask and a simple bootstrap dark theme. The html template is part of the woocogs.py file. From there you can update the logo, page heading, text, add additional countries to the drop down search, change colors, etcs...<br><br>
 
 There isn't a working 'Success Message' - Once I upload a CSV I check WooCommerce to verify. I did attempt to add a success message but never went back to debug.
 

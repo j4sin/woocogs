@@ -1,26 +1,30 @@
 # woocogs
 Discogs to WooCommerce Import
 
-This is a simple script that allows you to connect Discogs and your WooCommerce vinyl store. You can enter catalog ids manually or upload a CSV file (simple file with catalog ids separated by commas). I run this on my local machine.  Requires Python & Flask
+This is a simple script that allows you to pull data from Discogs into your WooCommerce vinyl store. You can enter catalog ids manually or upload a CSV file (simple file with catalog ids separated by commas). I run this on my local machine. Requires Python & Flask
 
-You'll need to update the woocogs.py file and the discogs_token.json file with your Discogs and WooCommerce api information.  
+This does not sync your personal catalog directly with WooCommerce.
+
+<strong>To Get Started:</strong>
+
+You'll need to update the woocogs.py file with your Discogs and WooCommerce api information.  
 
 From Discogs you'll need:<br> 
   - OAuth Keys (consumer & secret)
   - Access Tokens (access & secret)
+    - The access tokens are generated the first time you run the app.  You will get a notice to visit a private Discogs url to get a code for verification.  Once you have that code a JSON file for the Access tokens will be generated.
 
 From WooCommerce you'll need:<br>
   - Site URL
   - API Keys (Consumer & Secret)
 <br><br>
 
-Updating the files:
+<strong>Updating the files:</strong>
   - woocogs.py<br>
     - Update the Discogs OAuth setup with your keys (consumer_key & consumer_secret)
     - Update the WooCommerce API setup with your website url and keys (consumer_key and consumer_secret)
   - discogs_token.json<br>
-    - Update the Access Tokens (access_token & access_token_secret)
-<br>
+    - Generated on first run of app. You should not need to verify again or edit this file.<br>
 
 What is the app pulling from Discogs?<br>
   - Album Title 
